@@ -247,6 +247,66 @@ h1 {
     
 }
 
+.forms h3 {
+    text-align: center;
+    padding-top: 40px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+
+
+
+.modal-button {
+    background-color: var(--basic-color);
+        color: #fff;
+        cursor: pointer;
+        border: none;
+        border-radius: 3px;
+        font-weight: 700;
+        line-height: 1.9;
+        width: 200px;
+        height: 50px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        font-size: 16px;
+        
+    
+}
+
+.forms input {
+    width: 448px;
+    height: 40px;
+    margin: auto;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+
+}
+
+.forms textarea {
+    margin: auto;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    width: 448px;
+    height: 120px;
+}
+
+.forms p {
+    padding-left: 40px;
+    font-size: 12px;
+    color: #757575;
+}
+
+
+.forms button {
+    margin-left: 164px;
+    
+
+}
 .close-btn {
     position: absolute;
     top: 8px;
@@ -263,6 +323,13 @@ h1 {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+}
+
+
+.forms input {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    
 }
 
 /* service offer */

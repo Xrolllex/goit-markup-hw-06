@@ -301,9 +301,60 @@
 
 </footer>
 
-<div class="backdrop is-hidden" data-modal>
+<div class="backdrop" data-modal>
     <div class="modal">
         <button type="button" class="close-btn" data-modal-close>X</button>
+        
+            <div class="forms">
+                
+                    <form>
+                        <h3>Zostaw swoje dane w formularzu poniżej</h3>
+                        
+                        <label class="modal-form">
+                                <p>Imię</p>
+                                <input type="text" name="username" required><svg class="module-mail" width="12" height="12">
+                                    <use href="images/icons.svg#icon-Vector-4"></use>
+                                </svg>
+                                
+                                </label>
+                        
+
+                        
+                        <label class="modal-form">
+                                <p>Telefon</p>
+                                <input type="tel" name="phone" required /><svg class="module-mail" width="12" height="12">
+                                    <use href="images/icons.svg#icon-Vector-2"></use>
+                                </svg>
+                                
+                                </label>
+                        
+
+                            
+                        <label for="user_email" class="modal-form">
+                            <p>Email</p>
+                            <input type="email" name="email" id="user_email" required><svg class="module-mail" width="12" height="12">
+                                <use href="images/icons.svg#icon-Vector-3"></use></svg>
+                            
+                            </label>
+                        
+
+                        <label class="comment">
+                                <p>Komentarz</p>
+                                <textarea name="feedback" rows="5" placeholder="Wprowadź tekst" required></textarea>
+                                </div>
+                                </label>
+                        
+                            
+                        <label class="checkbox">
+                                    <input type="checkbox" name="hobby" value="Oświadczam iż akceptuję Regulamin i Politykę Prywatności" required />
+                                    Oświadczam iż akceptuję <a href="#">Regulamin</a> i <a href="#">Politykę Prywatności</a>
+                                </label>
+
+                        <button type="submit" class="modal-button">Wyślij</button>
+                        
+                    </form>
+            </div>
+        </div>
     </div>
 </div>
 
