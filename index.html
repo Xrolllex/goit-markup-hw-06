@@ -276,24 +276,41 @@
 
                      <h4 class="join-us">DOŁĄCZ DO NAS</h4>
 
-                     <ul class="social-icons-footer">
-                        <li class="footer-circle"><a href="#">
-                            <svg class="social-media-footer" width="20" height="20">
-                            <use href="./images/icons.svg#icon-instagram-2"></use>
-                             </svg></a></li>
+                        <ul class="social-icons-footer">
                             <li class="footer-circle"><a href="#">
-                             <svg class="social-media-footer" width="20" height="20">
-                            <use href="./images/icons.svg#icon-twitter-1"></use>
-                             </svg></a></li>
-                             <li class="footer-circle"><a href="#">
-                            <svg class="social-media-footer" width="20" height="20">
-                            <use href="./images/icons.svg#icon-facebook-1"></use>
-                            </svg></a></li>
-                             <li class="footer-circle"><a href="#">
-                             <svg class="social-media-footer" width="20" height="20">
-                             <use href="./images/icons.svg#icon-linkedin-1"></use>
-                            </svg></a></li>
-                     </ul>
+                                <svg class="social-media-footer" width="20" height="20">
+                                <use href="./images/icons.svg#icon-instagram-2"></use>
+                                </svg></a></li>
+                                <li class="footer-circle"><a href="#">
+                                <svg class="social-media-footer" width="20" height="20">
+                                <use href="./images/icons.svg#icon-twitter-1"></use>
+                                </svg></a></li>
+                                <li class="footer-circle"><a href="#">
+                                <svg class="social-media-footer" width="20" height="20">
+                                <use href="./images/icons.svg#icon-facebook-1"></use>
+                                </svg></a></li>
+                                <li class="footer-circle"><a href="#">
+                                <svg class="social-media-footer" width="20" height="20">
+                                <use href="./images/icons.svg#icon-linkedin-1"></use>
+                                </svg></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-newsletter">
+                        <p>Zapisz się do newslettera</p>
+                        <div class="newsletter-box">
+                            <form>
+                                <label for="email" class="newsletter-mail">
+                                    <input type="email" name="email" placeholder="E-mail" required>
+                                </label>
+                            </form>
+                                <div class="send-button">
+                                    <button class="button-newsletter" data-modal-open type="submit">Zapisz się</button>
+                                    <svg class="send-icon-button" width="24" height="24"><use href="./images/icons.svg#icon-icon-send"></use></svg>
+
+                                </div>
+                            
+                        </div>
                     </div>
         </div>
     </div>
@@ -304,56 +321,66 @@
 <div class="backdrop" data-modal>
     <div class="modal">
         <button type="button" class="close-btn" data-modal-close>X</button>
-        
-            <div class="forms">
-                
-                    <form>
+                   
+                 <form>
+                                       
                         <h3>Zostaw swoje dane w formularzu poniżej</h3>
-                        
-                        <label class="modal-form">
-                                <p>Imię</p>
-                                <input type="text" name="username" required><svg class="module-mail" width="12" height="12">
-                                    <use href="images/icons.svg#icon-Vector-4"></use>
-                                </svg>
+
+                        <div class="box-modal">
+                           
+                           <div class="modal-label">
+                            <label>
+                                    Imię</label>
+                                    <div class="icon-container">
+                                        <svg class="modal-icon" width="12" height="12">
+                                            <use href="images/icons.svg#icon-Vector-4"></use>
+                                        </svg>
+                                    </div>
+                                    <input type="text" name="username" class="form-input" required />
                                 
-                                </label>
-                        
+                            </div>
 
+                            <div class="modal-label">
+                                <label>
+                                    Telefon
+                                </label>
+                                <div class="icon-container">
+                                    <svg class="modal-icon" width="13" height="13">
+                                        <use href="images/icons.svg#icon-Vector-2"></use>
+                                    </svg>
+                                    </div>
+                                    <input type="tel" name="phone" class="form-input" required />
+                                    
+                            </div>
+                            
+                            <div class="modal-label">
+                                <label for="user_email">
+                                    Email
+                                    </label>
+                                     <div class="icon-container">
+                                        <svg class="modal-icon" width="15" height="12">
+                                        <use href="images/icons.svg#icon-Vector-3"></use></svg>
+                                    </div>        <input type="email" name="email" id="user_email" class="form-input" />
+                            </div>
+                            
+                                    <label>
+                                        Komentarz
+                                     </label>
+
+                                        <textarea name="feedback" rows="5" placeholder="Wprowadź tekst" required></textarea>
+                            
                         
-                        <label class="modal-form">
-                                <p>Telefon</p>
-                                <input type="tel" name="phone" required /><svg class="module-mail" width="12" height="12">
-                                    <use href="images/icons.svg#icon-Vector-2"></use>
-                                </svg>
+                       
                                 
-                                </label>
-                        
+                             <label class="checkbox">
+                                        <input type="checkbox" name="accept" value="Oświadczam iż akceptuję Regulamin i Politykę Prywatności" required />
+                                        <p class="checkbox-describe">Oświadczam iż akceptuję <a href="#">Regulamin</a> i <a href="#">Politykę Prywatności</a></p>
+                                    </label>
 
-                            
-                        <label for="user_email" class="modal-form">
-                            <p>Email</p>
-                            <input type="email" name="email" id="user_email" required><svg class="module-mail" width="12" height="12">
-                                <use href="images/icons.svg#icon-Vector-3"></use></svg>
-                            
-                            </label>
-                        
-
-                        <label class="comment">
-                                <p>Komentarz</p>
-                                <textarea name="feedback" rows="5" placeholder="Wprowadź tekst" required></textarea>
-                                </div>
-                                </label>
-                        
-                            
-                        <label class="checkbox">
-                                    <input type="checkbox" name="hobby" value="Oświadczam iż akceptuję Regulamin i Politykę Prywatności" required />
-                                    Oświadczam iż akceptuję <a href="#">Regulamin</a> i <a href="#">Politykę Prywatności</a>
-                                </label>
-
-                        <button type="submit" class="modal-button">Wyślij</button>
-                        
+                            <button type="submit" class="modal-button">Wyślij</button>
+                        </div>
                     </form>
-            </div>
+            
         </div>
     </div>
 </div>
