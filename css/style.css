@@ -263,11 +263,14 @@ h1 {
     padding-left: 40px;
     padding-bottom: 4px;
     padding-top: 10px;
+    color: #757575;
 }
 
 .input-container {
     position: relative;
 }
+
+
 
 
 .modal-icon {
@@ -282,17 +285,19 @@ h1 {
 }
 
 
+
 form h3 {
     text-align: center;
     font-size: 20px;
     font-weight: 700;
-    
+    line-height: 1.2;
+    margin-top: 40px;
+    color: #212121;
+   
 }
 
 
-
-
-.checkbox a {
+.statue a {
     color: var(--basic-color);
     text-decoration: underline;
 }
@@ -305,34 +310,77 @@ form h3 {
     align-items: center;
     justify-content: center;
     border: 1px solid rgba(33, 33, 33, 0.2);
-        border-radius: 4px;
+    border-radius: 4px;
     position: relative;
     padding-left: 30px;
-    
+       
+}
+
+.form-input:focus-within+.modal-icon,
+.form-input:hover {
+    border: 1px solid var(--basic-color);
+    outline: none;
+    fill: var(--basic-color)
     
 }
 
 
 form textarea {
     resize: none;
-    width: 448px;
-    height: 120px;
+    width: 432px;
+    height: 108px;
     margin: auto;
     display: block;
     align-items: center;
     justify-content: center;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    padding-left: 16px;
+    padding-top: 12px;
 
 }
 
-.checkbox {
+.form-textarea:focus-within,
+.form-textarea:hover {
+    border: 1px solid var(--basic-color);
+        outline: none;
+        
+}
+
+
+
+
+.statue {
     display: flex;
     padding-left: 55px;
     padding-bottom: 10px;
     color: #757575;   
+    align-items: center;
+    position: relative;
 }
+
+.statue input[type="checkbox"] {
+    position: absolute;
+        opacity: 0;
+        cursor: pointer;
+}
+
+.statue input[type="checkbox"]:checked+.checkbox-custom::before {
+    background-color: var(--basic-color);
+    border: 2px solid var(--basic-color);
+}
+
+
+.checkbox-custom::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    border: 2px solid #212121;
+    border-radius: 4px;
     
+}
+
 
 .modal-button {
     background-color: var(--basic-color);
@@ -353,10 +401,6 @@ form textarea {
 }
 
 
-.checkbox-describe {
-    padding-left: 8px;
-}
-
 
 .close-btn {
     position: absolute;
@@ -369,6 +413,16 @@ form textarea {
     border-radius: 50%;
     cursor: pointer;
 }
+
+.close {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+    margin: auto;
+}
+
+
 
 .is-hidden {
     opacity: 0;
@@ -787,14 +841,77 @@ h4 {
     
 }
 
-.two-blocks {
+.three-blocks {
     display: flex;
-    gap: 70px;
+    gap: 60px;
 }
 
 .footer-social {
     padding-top:72px ;
     
+    
+}
+
+.footer-newsletter {
+    padding-top: 72px;
+}
+
+.footer-newsletter p {
+    font-weight: 700;
+    color: #FFFFFF;
 }
 
 
+.newsletter-box {
+    display: flex;
+    align-items: center;
+    
+}
+
+.newsletter-box input {
+    background-color: inherit;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        width: 342px;
+        height: 50px;
+        padding-left: 16px;
+}
+
+.newsletter-box ::placeholder {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.send-button {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-left: 12px;
+     
+}
+
+.send-button button {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+     background-color: var(--basic-color);
+     box-shadow: rgba(0, 0, 0, 0.15);
+     border-radius: 4px;
+     border: 1px ;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+     padding-left: 42px;
+     border: 1px solid var(--basic-color);
+}
+
+.send-icon {
+    display: flex;
+    position: absolute;
+    margin-left: 94px;
+    fill: #fff;
+}

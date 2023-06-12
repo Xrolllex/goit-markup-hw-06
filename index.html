@@ -260,7 +260,7 @@
 <footer class="footer-nav">
 
     <div class="container">
-        <div class="two-blocks">
+        <div class="three-blocks">
 
                 <address class='contact'>
                         <ul class="footer-contact">
@@ -297,7 +297,7 @@
                     </div>
 
                     <div class="footer-newsletter">
-                        <p>Zapisz się do newslettera</p>
+                        <p>ZAPISZ SIĘ DO NEWSLETTERA</p>
                         <div class="newsletter-box">
                             <form>
                                 <label for="email" class="newsletter-mail">
@@ -305,9 +305,9 @@
                                 </label>
                             </form>
                                 <div class="send-button">
-                                    <button class="button-newsletter" data-modal-open type="submit">Zapisz się</button>
-                                    <svg class="send-icon-button" width="24" height="24"><use href="./images/icons.svg#icon-icon-send"></use></svg>
-
+                                    <button class="button-newsletter" data-modal-open type="submit">Zapisz się
+                                    <svg class="send-icon" width="24" height="24"><use href="./images/icons.svg#icon-icon-send"></use></svg>
+                                        </button>
                                 </div>
                             
                         </div>
@@ -318,9 +318,9 @@
 
 </footer>
 
-<div class="backdrop" data-modal>
+<div class="backdrop is-hidden" data-modal>
     <div class="modal">
-        <button type="button" class="close-btn" data-modal-close>X</button>
+        <button type="button" class="close-btn" data-modal-close><svg class="close" width="11" height="11"><use href="./images/icons.svg#icon-Vector-5"></use></svg></button>
                    
                  <form>
                                        
@@ -329,19 +329,19 @@
                         <div class="box-modal">
                            
                            <div class="modal-label">
-                            <label>
-                                    Imię</label>
+                            <label for="name">
+                                    Imie</label>
                                     <div class="icon-container">
                                         <svg class="modal-icon" width="12" height="12">
                                             <use href="images/icons.svg#icon-Vector-4"></use>
                                         </svg>
                                     </div>
-                                    <input type="text" name="username" class="form-input" required />
+                                    <input type="text" name="username" id="name" class="form-input"/>
                                 
                             </div>
 
                             <div class="modal-label">
-                                <label>
+                                <label for="phone">
                                     Telefon
                                 </label>
                                 <div class="icon-container">
@@ -349,7 +349,7 @@
                                         <use href="images/icons.svg#icon-Vector-2"></use>
                                     </svg>
                                     </div>
-                                    <input type="tel" name="phone" class="form-input" required />
+                                    <input type="tel" name="phone" id="phone" class="form-input" />
                                     
                             </div>
                             
@@ -359,23 +359,31 @@
                                     </label>
                                      <div class="icon-container">
                                         <svg class="modal-icon" width="15" height="12">
-                                        <use href="images/icons.svg#icon-Vector-3"></use></svg>
-                                    </div>        <input type="email" name="email" id="user_email" class="form-input" />
+                                        <use href="images/icons.svg#icon-Vector-3"></use>
+                                    </svg>
+                                    </div>        
+                                    <input type="email" name="email" id="user_email" class="form-input" />
                             </div>
-                            
+                            <div class="modal-label">
                                     <label>
                                         Komentarz
                                      </label>
 
-                                        <textarea name="feedback" rows="5" placeholder="Wprowadź tekst" required></textarea>
-                            
+                                        <textarea name="feedback" rows="5" placeholder="Wprowadź tekst"  class="form-textarea"></textarea>
+                            </div>
                         
                        
                                 
-                             <label class="checkbox">
-                                        <input type="checkbox" name="accept" value="Oświadczam iż akceptuję Regulamin i Politykę Prywatności" required />
-                                        <p class="checkbox-describe">Oświadczam iż akceptuję <a href="#">Regulamin</a> i <a href="#">Politykę Prywatności</a></p>
-                                    </label>
+                             <label class="statue">
+                                        <input type="checkbox" name="accept" value="reg-accept" required />
+                                        <div class="checkbox-custom">
+                                        <svg class="checkbox-icon" width="16px" height="15px">
+                                            <use href="./images/icons.svg#icon-Vector"></use>
+                                        </svg></div>
+                                        <p class="checkbox-describe">Oświadczam iż akceptuję <a href="#">Regulamin</a> i <a href="#">Politykę Prywatności</a>
+                                        </p>
+                                        
+                                </label>
 
                             <button type="submit" class="modal-button">Wyślij</button>
                         </div>
