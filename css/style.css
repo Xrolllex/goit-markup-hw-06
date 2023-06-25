@@ -277,7 +277,7 @@ h1 {
         position: absolute;
         fill: #212121;
        margin-left: 55px;  
-       margin-top: 21px;     
+       margin-top: 51px;     
         box-sizing: border-box;
         transform: translate(-50%, -50%);
         pointer-events: none;
@@ -318,13 +318,18 @@ form h3 {
         transition-property: border;
 }
 
-.form-input:focus-within+.modal-icon,
+.form-input:focus-within,
 .form-input:hover {
     border: 1px solid var(--basic-color);
     outline: none;
     fill: var(--basic-color)
     
 }
+
+
+ .form-input:checked+.modal-icon {
+     fill: var(--basic-color);
+ }
 
 
 form textarea {
@@ -351,9 +356,6 @@ form textarea {
         outline: none;
         
 }
-
-
-
 
 
 
