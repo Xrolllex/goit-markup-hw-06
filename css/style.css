@@ -327,9 +327,13 @@ form h3 {
 }
 
 
- .form-input:checked+.modal-icon {
-     fill: var(--basic-color);
- }
+.form-input:hover+.modal-icon {
+    fill: var(--basic-color)
+}
+
+.form-input:focus-within+.modal-icon {
+    fill: var(--basic-color)
+}
 
 
 form textarea {
